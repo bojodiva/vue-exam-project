@@ -8,6 +8,7 @@
         <ul class="nav--links">
             <li><router-link  class="link"  to="/">Home</router-link></li>
             <li><router-link to="/repos"  class="link">Repos</router-link></li>
+            <li><router-link to="/search" class="link">Search</router-link></li>
         </ul>
     </div>
 </div>
@@ -76,7 +77,7 @@
     display: flex;
     list-style: none;
     justify-content: space-around;
-    gap: 30px;
+    gap: 15px;
     margin: 20px;
     padding: 0;
   }

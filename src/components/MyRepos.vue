@@ -145,7 +145,7 @@ export default {
   left: 0;
   display: grid;
   place-items: center;
-  background-color: rgba(0,0,0,0.5) ;
+  background-color: rgba(0,0,0,0.9) ;
 }
 .loader{
   border: 10px solid rgb(60, 230, 60);

@@ -1,6 +1,9 @@
  <template>
     <!-- <h1>Repo item</h1> -->
-    <div class="repo--item-container">
+    <div v-if="isLoading" class="loader-body">
+    <div class="loader"></div>
+    </div>
+    <div v-else class="repo--item-container" >
         <div class="repo--heading">
     <p class="full--name">{{ post.full_name }} <span class="visible">{{ post.visibility }}</span></p>
     <p>Branch: {{ post.default_branch }}</p>
@@ -48,6 +51,7 @@ export default{
     data(){
         return{
             post: "",
+            isLoading: true
         }
     },
 
@@ -59,10 +63,12 @@ export default{
 
     created(){
         const reposId = this.$route.params.reposId;
+        this.isLoading = true
         fetch(`https://api.github.com/repositories/${reposId}`)
         .then((response) => response.json())
         .then(data => {
-            this.post = data
+            this.post = data;
+            this.isLoading = false
     })
 
 },
@@ -76,7 +82,7 @@ export default{
   margin: 25px;
   color: black;
   background-color: rgb(60,230,60);
-  padding: 100px;
+  padding: 80px;
   margin-top: 30px;
   margin-bottom: 50px;
    }
@@ -124,6 +130,25 @@ export default{
 .avatar{
     width: 100px;
     border-radius: 50px;
+}
+
+.loader-body{
+   width: 100%;
+   height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: grid;
+  place-items: center;
+  background-color: rgba(0,0,0,0.9) ;
+}
+.loader{
+  border: 10px solid rgb(60, 230, 60);
+  border-top: 10px solid black;
+  border-radius: 80px;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
 }
 
 
@@ -254,16 +279,16 @@ export default{
    .repo--item-counts{
     display: flex;
     justify-content: space-between;
-    margin: 20px;
+    margin-top: 50px;
    }
    .repo--item-date{
     display: flex;
     justify-content: space-between;
     gap: 20px;
-    margin: 20px;
+    margin-top: 50px;
    }
    .repo--item-lang{
-    margin: 20px;
+    margin-top: 50px;
    }
 
    .repo--item-link{
@@ -277,7 +302,7 @@ export default{
    .left--side{
     padding: 30px;
    }
-  
+   
     .avatar{
         width: 150px;
         height: 150px;
