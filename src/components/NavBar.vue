@@ -38,9 +38,10 @@
 
   .logo{
     font-size: 35px;
-    border-style: dotted solid rgb(60, 230, 60);
+    /* border-style: dotted solid rgb(60, 230, 60); */
     color: rgb(60, 230, 60);
     font-weight: bold;
+    font-family: 'Amaranth', sans-serif;
   }
 
   .nav--link-container{
@@ -80,6 +81,14 @@
     gap: 15px;
     margin: 20px;
     padding: 0;
+  }
+
+  .logo{
+    font-size: 35px;
+  }
+ 
+  .name--logo{
+    margin: 1px;
   }
 }
 
