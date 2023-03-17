@@ -139,7 +139,7 @@ export default{
     outline: none;
     padding: 6px;
     border-radius: 3px;
-    margin: auto;
+    margin-top: 50px;
     transition: 0.3s
 }
 
