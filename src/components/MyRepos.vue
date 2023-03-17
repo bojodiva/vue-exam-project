@@ -171,6 +171,12 @@ export default {
 }
 
 
+@media screen and (min-width: 479px){
+  .repo--container{
+   margin:10px;
+  }
+}
+
 @media screen and (min-width: 768px) and (max-width: 1023px){
   .paginate--arrows{
   margin-bottom: 100px;
