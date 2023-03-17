@@ -107,7 +107,7 @@ export default{
 
 .search--icon{
   width: 20px;
-  border: 1px solid rgb(60, 230, 60);
+  border: 1px solid rgb(77, 131, 77);
   padding: 3px;
   border-radius: 3px;
 }
@@ -170,17 +170,17 @@ export default{
 }
 
 .contact--container{
-  border: 1px solid rgb(60,230,60);
+  border: 1px solid rgb(77,131,77);
   padding: 20px 50px;
 }
 
 .count--container{
-  border: 1px solid rgb(60,230,60);
+  border: 1px solid rgb(77,131,77);
   padding: 20px 50px;
 }
 
 .date--container{
-  border: 1px solid rgb(60,230,60);
+  border: 1px solid rgb(77,131,77);
   text-align: center;
   vertical-align: center;
   padding: 20px 50px;
@@ -205,7 +205,7 @@ p{
 .profile--link{
   text-decoration: none;
   background-color: black;
-  color: rgb(60, 230, 60);
+  color: rgb(77, 130, 77);
   border-radius: 10px;
   padding: 10px 10px;
   width: 10px;
@@ -220,7 +220,7 @@ p{
 
 @media screen and (max-width: 479px){
   .avatar{
-    width: 200px;
+    width: 150px;
 
   }
 
