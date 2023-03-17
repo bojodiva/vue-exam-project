@@ -127,7 +127,7 @@ export default{
 }
 
 .search--button{
-    background-color: rgb(60, 230, 60);
+    background-color: rgb(77, 131, 77);
     color: black;
     border: none;
     outline: none;
@@ -138,7 +138,7 @@ export default{
 }
 
 .search--button:hover{
-    background-color: rgb(77, 131, 77);
+    background-color: rgb(60, 230, 60);
 }
 
 .input--search{
