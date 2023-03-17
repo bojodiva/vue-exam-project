@@ -50,9 +50,7 @@
     font-family: 'Amaranth', sans-serif;
  }
 
- .logo--container{
-   border: 2px solid  rgb(60, 230, 60);
- }
+ 
  .footer--heading{
     color:azure;
     font-weight: lighter;
