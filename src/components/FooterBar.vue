@@ -63,12 +63,12 @@
 
  .footer--link{
     text-decoration: none;
-    color: rgb(60, 230, 60);
+    color: rgb(77, 130, 77);
  }
 
  .socials--link{
     text-decoration: none;
-    color: rgb(60, 230, 60); 
+    color: rgb(77, 130, 77); 
  }
 
  .socials--logo{
