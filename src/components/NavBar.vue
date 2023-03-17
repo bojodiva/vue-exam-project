@@ -85,7 +85,7 @@
     display: flex;
     list-style: none;
     justify-content: space-around;
-    gap: 10px;
+    gap: 15px;
     margin: 20px;
     padding: 0;
   }
