@@ -8,6 +8,7 @@
         <div class="link--container">
             <router-link to="/" class="footer--link">Home</router-link>
             <router-link to="/repos" class="footer--link">Repositories</router-link>
+           <router-link to="/search" class="footer--link">Search</router-link>
         </div>
     </div>
 
