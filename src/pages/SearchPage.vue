@@ -89,7 +89,7 @@ export default{
 
 <style scoped>
 .post--container{
-    background-color: rgba(60, 230, 60, 0.9);
+    background-color: rgba(77, 130, 77, 0.9);
     border-radius: 20px;
     margin-top: 30px;
     margin-bottom: 60px;
