@@ -90,7 +90,7 @@ export default {
   /* text-align: center; */
   border-radius: 20px;
   margin: 25px;
-  background-color: rgb(60, 230, 60);
+  background-color: rgb(71, 131, 71);
   padding: 50px;
   margin-top: 50px;
   /* display: flex;
