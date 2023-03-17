@@ -7,12 +7,99 @@
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Abel&family=Amaranth&family=Montserrat&family=Qwitcher+Grypen:wght@700&family=Satisfy&family=Tiro+Kannada:ital@1&display=swap" rel="stylesheet">
     <title>Github Fetch</title>
+    <style>
+      body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+
+    #x{
+      background-color: red;
+    }
+    #y{
+      background-color: blue;
+    }
+    #z{
+      background-color: orange;
+    }
+   #w{
+     background-color: green;
+   }
+
+      body::-webkit-scrollbar {
+      outline: 1px solid rgb(60,230,60);
+      width: 1em;
+      border-radius: 5px;
+    }
+     
+    body::-webkit-scrollbar-track {
+     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    }
+     
+    body::-webkit-scrollbar-thumb {
+      
+      background-color: rgba(0, 0, 0,  0.9);
+    }
+
+    .page-button {
+        border-radius: 15px;
+        position: absolute;
+        border: none;
+        height: 20px;
+        font-size: 16px;
+        font-weight: bold;
+        font-family: 'Amaranth', sans-serif;
+        padding: 10px;
+        animation: spin 2s linear infinite;
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}    
+
+.page-loader-wrapper{
+  width: 100%;
+   height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: grid;
+  place-items: center;
+  background-color: rgba(60,230,60,0.8) ;
+}
+
+.page-loader{
+  border-radius: 80px;
+  width: 120px;
+  height: 120px;
+  /* animation: spin 2s linear infinite; */
+}
+
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg)
+  }
+}
+    
+    </style>
   </head>
+    
   <body>
     <noscript>
       <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>
-    <div id="app"></div>
+    <div id="app">
+      <div class="page-loader-wrapper">
+        <div className="page-loader">
+          <span className="page-button" id="x">B</span>
+              <span className="page-button" id="y">O</span>
+              <span className="page-button" id="z">J</span>
+              <span className="page-button" id="w">O</span>
+        </div>
+      </div>
+    </div>
     <!-- built files will be auto injected -->
   </body>
 </html>

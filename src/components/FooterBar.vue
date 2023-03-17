@@ -46,6 +46,7 @@
     font-weight: lighter;
     margin-top: 100px;
     font-size: 30px;
+    font-family: 'Amaranth', sans-serif;
  }
 
  .logo--container{

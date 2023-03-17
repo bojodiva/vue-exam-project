@@ -1,7 +1,7 @@
 <template>
 <div class="nav--container">
     <div class="name--logo">
-        <span class="logo">BojoCodes</span>
+        <span class="logo" @click="onClick">BojoCodes</span>
     </div>
 
     <div class="nav--link-container">
@@ -15,7 +15,13 @@
 </template>
 
 <script>
-  export default{}
+  export default{
+    methods: {
+      onClick(){
+        this.$router.push("/")
+      }
+    }
+  }
 </script>
 
 <style scoped>
@@ -42,6 +48,7 @@
     color: rgb(60, 230, 60);
     font-weight: bold;
     font-family: 'Amaranth', sans-serif;
+    cursor: pointer;
   }
 
   .nav--link-container{
@@ -78,7 +85,7 @@
     display: flex;
     list-style: none;
     justify-content: space-around;
-    gap: 15px;
+    gap: 10px;
     margin: 20px;
     padding: 0;
   }
@@ -89,6 +96,13 @@
  
   .name--logo{
     margin: 1px;
+  }
+
+}
+
+@media screen and (min-width: 480px) and (max-width:619px){
+  .nav--links{
+    gap: 15px;
   }
 }
 

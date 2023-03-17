@@ -1,5 +1,5 @@
 <template>
-    <div class="home--container">
+    <div  class="home--container">
         <div class="text--container">
            <h1 class="home--heading">Hello there! <span class="emoji"> 👋 </span></h1>
            <h3 class="home--heading2">I'm <span class="name"> Abisola Ojo </span></h3>
@@ -18,18 +18,21 @@
 
 <script>
      export default {
+    
         methods: {
             onClick(){
                this.$router.push("/repos")
             }
-        }
+        },
      }
 </script>
 
 <style scoped>
   .home--container{
     margin-top: 60px;
+   
   }
+
 
   .home--photo{
     width: 300px;
@@ -150,7 +153,7 @@
     justify-content: space-around;
     
       margin-top: 250px;
-      margin-bottom: 500px;
+      margin-bottom: 300px;
    }
 }
 

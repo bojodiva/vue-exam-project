@@ -7,17 +7,17 @@
     </div>
     <div v-else >
       <div v-for="post in displayedData" :key="post.id"  class="repo--container">
-        <!-- <h2>{{ post.name }}</h2> -->
+       
         <h3 class="repo--name"> {{ post.name }} </h3>
-        <!-- <p> {{ post.html_url  }}</p> -->
        <div class="link--container">
-        <router-link :to="`/repos/${post.id}`" class="repo--item-link">Show more..</router-link>
+        <router-link :to="`/repos/${post.id}`" class="repo--item-link">View more &#x2197;</router-link>
       </div>
       </div>
     </div>
     <div class="paginate--arrows">
       <button @click="prevPage" :disabled="currentPage === 1" class="paginate--button"> &lt; </button>
-      
+
+      <p>Page {{ currentPage }}</p>
       <button @click="nextPage" :disabled="currentPage === numberPages" class="paginate--button"> &gt; </button>
     </div>
   </div>
@@ -28,7 +28,7 @@
 
 
 <script>
-// import axios from "axios";
+
 export default {
   data() {
     return {
@@ -36,10 +36,11 @@ export default {
       isLoading: true,
       currentPage: 1,
       postPerPage: 2, 
-      currentPosts: []
+      currentPosts: [],
     };
   },
   computed: {
+   
   numberPages(){
     return Math.ceil(this.response.length / this.postPerPage)
   },
@@ -120,7 +121,8 @@ export default {
   align-items: center;
   text-align: center;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 50px;
   margin-bottom: 50px;
 }
 
@@ -145,7 +147,7 @@ export default {
   left: 0;
   display: grid;
   place-items: center;
-  background-color: rgba(0,0,0,0.9) ;
+  background-color: rgba(0,0,0,1) ;
 }
 .loader{
   border: 10px solid rgb(60, 230, 60);

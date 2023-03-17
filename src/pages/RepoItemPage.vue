@@ -80,8 +80,10 @@ export default{
    .repo--item-container{
     border-radius: 20px;
   margin: 25px;
-  color: black;
-  background-color: rgb(60,230,60);
+  /* color: black; */
+  /* background-color: rgb(60,230,60); */
+  background-color: rgba(0,0,0,0.9);
+  color: rgb(60,230,60);
   padding: 80px;
   margin-top: 30px;
   margin-bottom: 50px;
@@ -90,6 +92,7 @@ export default{
    .visible{
     background-color: black;
     color: rgb(60,230,60);
+    border: 1px solid rgb(60,230,60);
     border-radius: 10px;
     padding: 2px;
    }
@@ -106,19 +109,20 @@ export default{
 
 .button{
     border: none;
-    background-color: rgb(60,230, 60);
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    background: none;
     padding: 0;
-    color: black;
+    color: rgb(60,230,60);
     font-weight: bolder;
     cursor: pointer;
-    text-decoration: underline 3px solid rgba(0, 0, 0, 0.5) ;
+    text-decoration: underline 3px solid rgba(60, 230, 60, 0.5) ;
    }
 
    .repo--link{
     text-decoration: none;
-    color: black;
+    color: rgb(60,230,60);
     font-weight: bolder;
-    text-decoration: underline 3px solid rgba(0, 0, 0, 0.5) ;
+    text-decoration: underline 3px solid rgba(60, 230, 60, 0.5) ;
    }
 
    .repo--item-link{
@@ -156,12 +160,13 @@ export default{
     /*media queries */
     @media screen and (max-width:479px){
         .repo--item-profile{
-   box-shadow: rgba(0,0,0, 0.1) 0px 4px 12px;
+   /* box-shadow: rgba(0,0,0, 0.1) 0px 4px 12px; */
+   box-shadow: rgba(60,230,60, 0.1) 0px 4px 12px;
    padding: 30px;
    width: 100px;
    border-radius: 10px;
     background-color: rgba(0,0,0,0.1);
-    color: rgb(18,63,18);
+    color: rgb(38,141,38);
   }
     }
 
@@ -175,12 +180,13 @@ export default{
     @media screen and (min-width: 768px) and (max-width: 1023px){
 
         .repo--item-profile{
-   box-shadow: rgba(0,0,0, 0.1) 0px 4px 12px;
+   /* box-shadow: rgba(0,0,0, 0.1) 0px 4px 12px; */
+   box-shadow: rgba(60,230,60, 0.1) 0px 4px 12px;
    padding: 50px;
    border-radius: 10px;
     margin: 5px;
     background-color: rgba(0,0,0, 0.1)  ;
-    color: rgb(18, 63, 18);
+    color: rgb(38, 141, 38);
   }
 
    .visible{
@@ -245,12 +251,12 @@ export default{
     @media screen and (min-width: 1024px){
        
         .repo--item-profile{
-   box-shadow: rgba(0,0,0, 0.1) 0px 4px 12px;
+   box-shadow: rgba(60,230,60, 0.1) 0px 4px 12px;
    padding: 50px;
    border-radius: 10px;
     margin: 5px;
-    background-color: rgba(0,0,0, 0.1)  ;
-    color: rgb(18, 63, 18);
+    background-color: rgba(0,0,0, 0.4)  ;
+    color: rgb(38, 141, 38);
   }
 
    .visible{
