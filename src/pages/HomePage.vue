@@ -126,7 +126,11 @@
         margin-bottom: 60px;
      }
      .text--container{
-        margin-bottom: 50px;
+        margin-bottom: 80px;
+     }
+
+     .button--link{
+      margin-top: 30px;
      }
  }
 

@@ -95,6 +95,7 @@ export default{
     margin-bottom: 60px;
     padding: 70px;
     margin: 25px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .profile--container{
@@ -206,7 +207,7 @@ p{
   background-color: black;
   color: rgb(60, 230, 60);
   border-radius: 10px;
-  padding: 5px;
+  padding: 10px 10px;
   width: 10px;
 }
 

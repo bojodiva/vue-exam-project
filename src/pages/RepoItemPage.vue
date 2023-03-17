@@ -14,8 +14,7 @@
         <!-- <img src=""/> -->
         <p class="owner--name">{{ post.owner.login }}</p>
    
-        <p>Followers:  {{ post.owner.followers_url.length}}</p>
-        <p>Following: {{ post.owner.following_url.length }}</p>
+       
         </div>
         <div class="left--side">
             <div class="repo--item-counts">
@@ -87,6 +86,7 @@ export default{
   padding: 80px;
   margin-top: 30px;
   margin-bottom: 50px;
+  font-family: 'Montserrat', sans-serif;
    }
 
    .visible{
@@ -115,6 +115,7 @@ export default{
     color: rgb(60,230,60);
     font-weight: bolder;
     cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
     text-decoration: underline 3px solid rgba(60, 230, 60, 0.5) ;
    }
 

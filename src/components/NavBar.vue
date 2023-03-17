@@ -95,7 +95,7 @@
   }
  
   .name--logo{
-    margin: 1px;
+    margin-top: 10px;
   }
 
 }
