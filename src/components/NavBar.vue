@@ -6,8 +6,8 @@
 
     <div class="nav--link-container">
         <ul class="nav--links">
-            <li><router-link  class="link"  to="/">Home</router-link></li>
-            <li><router-link to="/repos"  class="link">Repos</router-link></li>
+            <li><router-link  class="link"  to="/" id="link--hide">Home</router-link></li>
+            <li><router-link to="/repos"  class="link" id="link--hide">Repos</router-link></li>
             <li><router-link to="/search" class="link">Search</router-link></li>
         </ul>
     </div>
@@ -97,6 +97,9 @@
   .name--logo{
     margin-top: 10px;
   }
+  #link--hide{
+    display: none;
+}
 
 }
 
