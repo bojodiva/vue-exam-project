@@ -1,7 +1,7 @@
 <template>
 <div class="nav--container">
     <div class="name--logo">
-        <span class="logo" @click="onClick">GitApp</span>
+        <span class="logo" @click="onClick">&#x27f2;GitApp</span>
     </div>
 
     <div class="nav--link-container">
