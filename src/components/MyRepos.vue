@@ -174,6 +174,7 @@ export default {
 @media screen and (min-width: 479px){
   .repo--container{
    margin:10px;
+   padding: 50px 55px;
   }
 }
 
