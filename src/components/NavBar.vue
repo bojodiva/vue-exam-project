@@ -45,7 +45,7 @@
   .logo{
     font-size: 35px;
     /* border-style: dotted solid rgb(60, 230, 60); */
-    color: rgb(60, 230, 60);
+    color: rgb(77, 130, 77);
     font-weight: bold;
     font-family: 'Amaranth', sans-serif;
     cursor: pointer;
@@ -76,7 +76,7 @@
 
 .router-link-active{
   color: black;
-    text-decoration: underline 3px solid rgb(60, 230, 60) ;
+    text-decoration: underline 3px solid rgb(77, 130, 77) ;
 }
 
 
