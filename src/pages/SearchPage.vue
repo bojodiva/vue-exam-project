@@ -3,7 +3,7 @@
 <div class="input--search">
   <div class="search--bar">
     <img src="../images/search-icon.png" alt="seach-logo" class="search--icon"/>
-    <input type="text" v-model="search" class="input--search" @keydown.enter.prevent="searchItem"/>
+    <input type="text" v-model="search" class="input--search" @keydown.enter.prevent="searchItem" placeholder="enter username"/>
   </div>
     <button @click.prevent="searchItem" class="search--button" >Search</button> 
 
@@ -42,7 +42,7 @@
           </div>
         </div>
     </div>
-<p v-if="userNotFound"> User Not Found</p>
+<p v-if="userNotFound" class="not--found"> User Not Found</p>
 </div>
 
 </template>
@@ -101,7 +101,7 @@ export default{
 .profile--container{
   padding: 20px 10px;
   border-radius: 10px;
-  border: 1px solid rgb(60,230,60);
+  border: 1px solid rgb(77,130,77);
   /* border: 1px solid black; */
 }
 
@@ -121,9 +121,15 @@ export default{
     margin: auto;
 }
 
+.not--found{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 20px;
+}
 
 .search--bar{
   display: flex;
+  margin-top: 50px;
 }
 
 .search--button{
@@ -205,7 +211,7 @@ p{
 .profile--link{
   text-decoration: none;
   background-color: black;
-  color: rgb(77, 130, 77);
+  color: rgb(60, 230, 67);
   border-radius: 10px;
   padding: 10px 10px;
   width: 10px;
