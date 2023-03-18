@@ -24,12 +24,14 @@
               <div class="details--container">
                 <div class="details--side">
                 <div class="count--container">
+                <h3> Count Details </h3>
                 <p>Repos: <span>{{ post.public_repos }}</span></p>
                 <p>Gist:  {{ post.public_gist }}</p>
                 <p>Followers:  {{ post.followers }}</p>
                 <p>Following: {{ post.following }}</p>
               </div>
               <div class="contact--container">
+                <h3> Contact Details </h3>
                 <p>Blog: {{ post.blog }}</p>
                 <p>Twitter: {{ post.twitter_username }}</p>
                 <p>Location: {{ post.location }}</p>
@@ -96,12 +98,13 @@ export default{
     padding: 70px;
     margin: 25px;
     font-family: 'Montserrat', sans-serif;
+    white-space: pre;
 }
 
 .profile--container{
   padding: 20px 10px;
   border-radius: 10px;
-  border: 1px solid rgb(77,130,77);
+  border: 1px solid rgba(77,130,77, 0.2);
   /* border: 1px solid black; */
 }
 
@@ -176,20 +179,23 @@ export default{
 }
 
 .contact--container{
-  border: 1px solid rgb(77,131,77);
+  border: 1px solid rgba(77,131,77, 0.5);
   padding: 20px 50px;
+border-radius: 10px;
 }
 
 .count--container{
-  border: 1px solid rgb(77,131,77);
+  border: 1px solid rgba(77,131,77, 0.5);
   padding: 20px 50px;
+border-radius: 10px;
 }
 
 .date--container{
-  border: 1px solid rgb(77,131,77);
+  border: 1px solid rgba(77,131,77, 0.7);
   text-align: center;
   vertical-align: center;
   padding: 20px 50px;
+border-radius: 10px;
 }
 
 .details--container{
