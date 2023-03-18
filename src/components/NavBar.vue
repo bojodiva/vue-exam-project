@@ -85,7 +85,7 @@
     display: flex;
     list-style: none;
     justify-content: space-around;
-    gap: 20px;
+    gap: 10px;
     margin: 20px;
     padding: 0;
   }
@@ -97,6 +97,7 @@
   .name--logo{
     margin-top: 10px;
   }
+
   #link--hide{
     display: none;
 }

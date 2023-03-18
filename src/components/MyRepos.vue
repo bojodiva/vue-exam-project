@@ -1,5 +1,4 @@
 <template>
-   <!-- <slot name="context"  :response="response"></slot> -->
   <div>
     <!-- <h1>My Repos</h1> -->
     <div v-if="isLoading" class="loader-body">
@@ -86,15 +85,11 @@ export default {
 
 <style scoped>
 .repo--container{
-  /* align-items: center; */
-  /* text-align: center; */
   border-radius: 20px;
-  margin: 25px;
+  margin: 70px;
   background-color: rgb(71, 131, 71);
   padding: 50px;
-  margin-top: 50px;
-  /* display: flex;
-  justify-content: space-between; */
+ 
 }
 
 .repo--name{
@@ -173,8 +168,8 @@ export default {
 
 @media screen and (min-width: 479px){
   .repo--container{
-   margin:10px;
-   padding: 50px 55px;
+   margin: 10px;
+   padding: 50px 60px;
   }
 }
 
@@ -185,7 +180,13 @@ export default {
   }
 
   .repo--container{
-    margin-top: 100px;
+    margin: 50px;
+  }
+}
+
+@media screen and (min-width: 1024px){
+  .repo--container{
+    margin: 60px;
   }
 }
 </style>
