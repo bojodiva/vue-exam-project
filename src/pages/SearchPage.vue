@@ -98,7 +98,7 @@ export default{
     padding: 70px;
     margin: 25px;
     font-family: 'Montserrat', sans-serif;
-    white-space: pre;
+    
 }
 
 .profile--container{
@@ -106,6 +106,7 @@ export default{
   border-radius: 10px;
   border: 1px solid rgba(77,130,77, 0.2);
   /* border: 1px solid black; */
+margin-bottom:10px;
 }
 
 .search--icon{
@@ -159,6 +160,11 @@ export default{
   
 }
 
+.username{
+   font-size: 19px;
+   margin-bottom: 5px;
+}
+
 .loader-body{
    width: 100%;
    height: 100%;
@@ -182,12 +188,15 @@ export default{
   border: 1px solid rgba(77,131,77, 0.5);
   padding: 20px 50px;
 border-radius: 10px;
+margin-bottom: 5px
 }
 
 .count--container{
   border: 1px solid rgba(77,131,77, 0.5);
   padding: 20px 50px;
 border-radius: 10px;
+white-space: pre;
+margin-bottom: 5px;
 }
 
 .date--container{
@@ -209,7 +218,7 @@ border-radius: 10px;
 }
 
 p{
-  font-size: 14px;
+  font-size: 15px;
   font-weight: lighter;
   font-family: 'Montserrat', sans-serif;
 }
@@ -260,6 +269,10 @@ p{
   .profile--link{
     padding: 10px 25px;
   }
+
+  .contact--container{
+     white-space: pre;
+}
  
 
 }
@@ -277,6 +290,10 @@ p{
   .search--icon{
     width: 30px;
   }
+ 
+  .contact--container {
+    white-space: pre;
+}
 
   .details--container{
     display: grid;
