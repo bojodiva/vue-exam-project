@@ -61,14 +61,18 @@ export default{
     },
 
     created(){
+      this.isLoading = true;
         const reposId = this.$route.params.reposId;
-        this.isLoading = true
-        fetch(`https://api.github.com/repositories/${reposId}`)
+try{ fetch(`https://api.github.com/repositories/${reposId}`)
         .then((response) => response.json())
         .then(data => {
             this.post = data;
-            this.isLoading = false
     })
+}catch(error){
+  console.log(error)
+} finally{
+this.isLoading = false 
+} 
 
 },
  
